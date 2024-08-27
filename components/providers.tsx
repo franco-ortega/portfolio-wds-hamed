@@ -7,7 +7,7 @@ type Props = {
   children: React.ReactNode
 }
 
-export default function providers({ children }: Props) {
+export default function Providers({ children }: Props) {
   return (
     <ThemeProvider
       enableSystem
