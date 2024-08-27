@@ -4,24 +4,33 @@ type Props = {}
 
 export default function Header({}: Props) {
   return (
-    <header>
-      <nav>
+    <header className={styles.header}>
+      <nav className={styles.nav}>
         <div>
-          <Link href={'/'}>Home</Link>
+          <Link href={'/'} className={styles.home}>
+            Home
+          </Link>
         </div>
 
         <ul>
-          <li>
+          <li className={styles.listItem}>
             <Link href={'/posts'}>Posts</Link>
           </li>
-          <li>
+          <li className={styles.listItem}>
             <Link href={'/projects'}>Projects</Link>
           </li>
-          <li>
+          <li className={styles.listItem}>
             <Link href={'/contact'}>Contact</Link>
           </li>
         </ul>
       </nav>
     </header>
   )
+}
+
+const styles = {
+  header: 'fixed inset-x-0 top-0 z-50 bg-background/75 py-6 backdrop-blur-sm',
+  nav: 'container flex max-w-3xl items-center justify-between',
+  home: 'font-serif text-2xl font-bold',
+  listItem: 'transition-colors hover:text-foreground'
 }
