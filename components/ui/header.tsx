@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import ThemeToggle from './theme-toggle'
 
 type Props = {}
 
@@ -23,6 +24,10 @@ export default function Header({}: Props) {
             <Link href={'/contact'}>Contact</Link>
           </li>
         </ul>
+
+        <div>
+          <ThemeToggle />
+        </div>
       </nav>
     </header>
   )
