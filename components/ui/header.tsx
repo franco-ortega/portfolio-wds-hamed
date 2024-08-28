@@ -9,7 +9,7 @@ export default function Header({}: Props) {
       <nav className={styles.nav}>
         <div>
           <Link href={'/'} className={styles.home}>
-            Home
+            Franco Ortega
           </Link>
         </div>
 
