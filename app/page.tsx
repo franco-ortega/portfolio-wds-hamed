@@ -1,10 +1,11 @@
+import Intro from '@/components/ui/intro'
+
 export default function Home() {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <h1 className={styles.heading}>Portfolio</h1>
+        <Intro />
       </div>
-      <div>Misc</div>
     </section>
   )
 }
