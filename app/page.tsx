@@ -4,6 +4,7 @@ export default function Home() {
       <div className="container">
         <h1 className="text-3xl font-bold">Portfolio</h1>
       </div>
+      <div>Misc</div>
     </section>
   );
 }
