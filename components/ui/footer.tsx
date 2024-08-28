@@ -72,7 +72,7 @@ export default function Footer({}: Props) {
           </div>
           <div className={styles.container2}>
             <p className={styles.container2item}>
-              &copy; {new Date().getFullYear()} Your Company. All rights
+              &copy; {new Date().getFullYear()} Franco Ortega. All rights
               reserved.
             </p>
           </div>
