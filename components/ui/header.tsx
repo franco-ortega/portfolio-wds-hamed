@@ -9,11 +9,11 @@ export default function Header({}: Props) {
       <nav className={styles.nav}>
         <div>
           <Link href={'/'} className={styles.home}>
-            Home
+            Franco Ortega
           </Link>
         </div>
 
-        <ul>
+        <ul className={styles.list}>
           <li className={styles.listItem}>
             <Link href={'/posts'}>Posts</Link>
           </li>
@@ -37,5 +37,6 @@ const styles = {
   header: 'fixed inset-x-0 top-0 z-50 bg-background/75 py-6 backdrop-blur-sm',
   nav: 'container flex max-w-3xl items-center justify-between',
   home: 'font-serif text-2xl font-bold',
+  list: 'flex items-center gap-6 text-sm font-light text-muted-foreground sm:gap-10',
   listItem: 'transition-colors hover:text-foreground'
 }
