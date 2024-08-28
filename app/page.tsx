@@ -1,10 +1,16 @@
 export default function Home() {
   return (
-    <section className="py-24">
-      <div className="container">
-        <h1 className="text-3xl font-bold">Portfolio</h1>
+    <section className={styles.section}>
+      <div className={styles.container}>
+        <h1 className={styles.heading}>Portfolio</h1>
       </div>
       <div>Misc</div>
     </section>
-  );
+  )
+}
+
+const styles = {
+  section: 'py-24',
+  container: 'container max-w-3xl',
+  heading: 'text-3xl font-bold'
 }
