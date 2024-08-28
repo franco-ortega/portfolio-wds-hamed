@@ -27,7 +27,7 @@ const navigation = [
     )
   },
   {
-    name: 'X',
+    name: 'Twitter',
     href: '#',
     icon: (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => (
       <svg fill='currentColor' viewBox='0 0 24 24' {...props}>
