@@ -51,27 +51,27 @@ const navigation = [
 ]
 
 type Props = {}
-export default function footer({}: Props) {
+export default function Footer({}: Props) {
   return (
-    <footer className='py-8'>
-      <div className='container max-w-3xl'>
-        <div className='md:flex md:items-center md:justify-between'>
-          <div className='flex justify-center space-x-6 md:order-2'>
+    <footer className={styles.footer}>
+      <div className={styles.container}>
+        <div className={styles.flex}>
+          <div className={styles.flex2}>
             {navigation.map(item => (
               <a
                 key={item.name}
                 href={item.href}
                 target='_blank'
                 rel='noreferrer noopener'
-                className='text-muted-foreground hover:text-foreground'
+                className={styles.link}
               >
-                <span className='sr-only'>{item.name}</span>
-                <item.icon aria-hidden='true' className='h-5 w-5' />
+                <span className={styles.screenReader}>{item.name}</span>
+                <item.icon aria-hidden='true' className={styles.icon} />
               </a>
             ))}
           </div>
-          <div className='mt-8 md:order-1 md:mt-0'>
-            <p className='text-center text-xs leading-5 text-muted-foreground'>
+          <div className={styles.container2}>
+            <p className={styles.container2item}>
               &copy; {new Date().getFullYear()} Your Company. All rights
               reserved.
             </p>
@@ -80,4 +80,16 @@ export default function footer({}: Props) {
       </div>
     </footer>
   )
+}
+
+const styles = {
+  footer: 'py-8',
+  container: 'container max-w-3xl',
+  flex: 'md:flex md:items-center md:justify-between',
+  flex2: 'flex justify-center space-x-6 md:order-2',
+  link: 'text-muted-foreground hover:text-foreground',
+  screenReader: 'sr-only',
+  icon: 'h-5 w-5',
+  container2: 'mt-8 md:order-1 md:mt-0',
+  container2item: 'text-center text-xs leading-5 text-muted-foreground'
 }
