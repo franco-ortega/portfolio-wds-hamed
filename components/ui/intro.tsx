@@ -3,10 +3,10 @@ import Image from 'next/image'
 type Props = {}
 export default function Intro({}: Props) {
   return (
-    <section>
-      <div>
-        <h1>
-          <p>
+    <section className={styles.section}>
+      <div className={styles.flex}>
+        <h1 className={styles.title}>
+          <p className={styles.content}>
             Detail-oriented software engineer with a passion for creating
             user-focused products. Thrives in collaborative, cross-functional,
             agile environments. Adept at developing innovative features,
@@ -15,7 +15,7 @@ export default function Intro({}: Props) {
             optimistically to think big while balancing practicality to
             consistently achieve goals.
           </p>
-          <p>
+          <p className={styles.content}>
             Additionally, despite growing up very much a math and science kid,
             has learned to love and nurture creativity through writing,
             cartography, and board game design. Other sources of joy are
@@ -25,15 +25,25 @@ export default function Intro({}: Props) {
             learnings around team work, expressiveness, and how the world could
             be a more equitable place.
           </p>
-          <p>
+          <p className={styles.content}>
             Yes to racial justice, social justice, climate justice, and economic
             justice.
           </p>
         </h1>
       </div>
-      <div>
-        <Image src={''} alt={''} />
+      <div className={styles.imgContainer}>
+        <Image src={''} alt={''} className={styles.img} />
       </div>
     </section>
   )
+}
+
+const styles = {
+  section:
+    'flex flex-col-reverse items-start gap-x-10 gap-y-4 pb-24 md:flex-row md:items-center',
+  flex: 'mt-2 flex-1 md:mt-0',
+  title: 'title no-underline',
+  content: 'mt-3 font-light text-muted-foreground',
+  imgContainer: 'relative',
+  img: 'flex-1 rounded-lg grayscale'
 }
