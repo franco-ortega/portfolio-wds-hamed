@@ -30,14 +30,19 @@ export default function Intro({}: Props) {
         </p>
       </div>
       <div className={styles.imgContainer}>
-        <Image
+        <img
+          className={styles.img}
+          src={'/images/intro/franco.jpg'}
+          alt={'Franco Ortega'}
+        />
+        {/* <Image
           className={styles.img}
           src={'/images/intro/franco.jpg'}
           alt={'Franco Ortega'}
           width={175}
           height={175}
           priority
-        />
+        /> */}
       </div>
     </section>
   )
