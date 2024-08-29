@@ -33,7 +33,7 @@ export default function Intro({}: Props) {
       <div className={styles.imgContainer}>
         <Image
           className={styles.img}
-          src={'/images/intro/franco.jpg'}
+          src={'/franco.jpg'}
           alt={'Franco Ortega'}
           width={175}
           height={175}
