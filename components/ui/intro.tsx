@@ -1,5 +1,5 @@
 import Image, { StaticImageData } from 'next/image'
-import introImage from '@/public/images/intro/franco.jpg'
+import introImage from '/public/images/intro/franco.jpg'
 
 type ImageProps = {
   img: StaticImageData
