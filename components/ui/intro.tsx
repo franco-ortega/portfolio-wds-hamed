@@ -1,4 +1,5 @@
 import Image from 'next/image'
+// import introImage from '../../public/images/intro/franco.jpg'
 
 type Props = {}
 export default function Intro({}: Props) {
@@ -30,19 +31,14 @@ export default function Intro({}: Props) {
         </p>
       </div>
       <div className={styles.imgContainer}>
-        <img
-          className={styles.img}
-          src={'/images/intro/franco.jpg'}
-          alt={'Franco Ortega'}
-        />
-        {/* <Image
+        <Image
           className={styles.img}
           src={'/images/intro/franco.jpg'}
           alt={'Franco Ortega'}
           width={175}
           height={175}
           priority
-        /> */}
+        />
       </div>
     </section>
   )
