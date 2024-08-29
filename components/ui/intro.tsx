@@ -6,7 +6,7 @@ export default function Intro({}: Props) {
   return (
     <section className={styles.section}>
       <div className={styles.flex}>
-        <h1 className={styles.title}>Hey, I'm Franco</h1>
+        <h1 className={styles.title}>Hey, I&#39;m Franco</h1>
         <p className={styles.content}>
           Detail-oriented software engineer with a passion for creating
           user-focused products. Thrives in collaborative, cross-functional,
@@ -15,7 +15,7 @@ export default function Intro({}: Props) {
           issues within business applications. Approaches work optimistically to
           think big while balancing practicality to consistently achieve goals.
         </p>
-        <p className={styles.content}>
+        <p className={styles.content} style={styles.hide}>
           Additionally, despite growing up very much a math and science kid, has
           learned to love and nurture creativity through writing, cartography,
           and board game design. Other sources of joy are bouldering, bike
@@ -25,7 +25,7 @@ export default function Intro({}: Props) {
           work, expressiveness, and how the world could be a more equitable
           place.
         </p>
-        <p className={styles.content}>
+        <p className={styles.content} style={styles.hide}>
           Yes to racial justice, social justice, climate justice, and economic
           justice.
         </p>
@@ -51,5 +51,6 @@ const styles = {
   title: 'title no-underline',
   content: 'mt-3 font-light text-muted-foreground',
   imgContainer: 'relative',
-  img: 'flex-1 rounded-lg grayscale'
+  img: 'flex-1 rounded-lg grayscale',
+  hide: { display: 'none' }
 }
