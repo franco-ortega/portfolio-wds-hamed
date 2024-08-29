@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import introImage from '../../public/images/intro/franco.jpg'
 
 type Props = {}
 export default function Intro({}: Props) {
@@ -33,7 +32,7 @@ export default function Intro({}: Props) {
       <div className={styles.imgContainer}>
         <Image
           className={styles.img}
-          src={introImage}
+          src={'/public/images/intro/franco.jpg'}
           alt={'Franco Ortega'}
           width={175}
           height={175}
