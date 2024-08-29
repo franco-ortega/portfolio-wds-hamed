@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import introImage from '../../public/images/intro/franco.jpg'
+import introImage from '/public/images/intro/franco.jpg'
 
 type Props = {}
 export default function Intro({}: Props) {
