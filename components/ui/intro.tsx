@@ -1,5 +1,22 @@
-import Image from 'next/image'
-import introImage from '/images/intro/franco.jpg'
+import Image, { StaticImageData } from 'next/image'
+import introImage from '@/public/images/intro/franco.jpg'
+
+type ImageProps = {
+  img: StaticImageData
+}
+
+function ImageContainer({ img }: ImageProps) {
+  return (
+    <Image
+      className={styles.img}
+      src={img}
+      alt={'Franco Ortega'}
+      width={175}
+      height={175}
+      priority
+    />
+  )
+}
 
 type Props = {}
 export default function Intro({}: Props) {
@@ -31,14 +48,15 @@ export default function Intro({}: Props) {
         </p>
       </div>
       <div className={styles.imgContainer}>
-        <Image
+        {/* <Image
           className={styles.img}
           src={introImage}
           alt={'Franco Ortega'}
           width={175}
           height={175}
           priority
-        />
+        /> */}
+        <ImageContainer img={introImage} />
       </div>
     </section>
   )
