@@ -15,7 +15,7 @@ export default function Header({}: Props) {
 
         <ul className={styles.list}>
           <li className={styles.listItem}>
-            <Link href={'/posts'}>Posts</Link>
+            <Link href={'/blog'}>Blog</Link>
           </li>
           <li className={styles.listItem}>
             <Link href={'/projects'}>Projects</Link>
