@@ -14,3 +14,4 @@ This demo was created through the following Web Dev Simplied course by Hamed:
 1. shadcd: `npx shadcn-ui@latest init`
 1. next-themes: `npm i next-themes`
 1. gray matter: `npm i gray-matter`
+1. MDX Remote for NextJS: `npm i next-mdx-remote`
