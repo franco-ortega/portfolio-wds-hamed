@@ -1,4 +1,5 @@
 import { getPostBySlug } from '@/lib/posts'
+import { formatDate } from '@/lib/utils'
 import { ArrowLeftIcon } from '@radix-ui/react-icons'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -40,7 +41,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
         <header>
           <h1 className='title'>{title}</h1>
           <p className='mt-3 text-xs text-muted-foreground'>
-            {/* {author} / {formatDate(publishedAt ?? '')} */}
+            {author} / {formatDate(publishedAt ?? '')}
           </p>
         </header>
 
