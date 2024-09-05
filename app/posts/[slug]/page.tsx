@@ -1,6 +1,7 @@
 import { getPostBySlug } from '@/lib/posts'
 import { formatDate } from '@/lib/utils'
 import { ArrowLeftIcon } from '@radix-ui/react-icons'
+import { MDXRemote } from 'next-mdx-remote'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -45,9 +46,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
           </p>
         </header>
 
-        <main className='prose dark:prose-invert mt-16'>
-          {/* <MDXContent source={content} /> */}
-        </main>
+        <main className='prose dark:prose-invert mt-16'></main>
 
         <footer className='mt-16'>{/* <NewsletterForm /> */}</footer>
       </div>
