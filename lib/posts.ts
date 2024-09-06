@@ -30,6 +30,6 @@ export async function getPostBySlug(slug: string): Promise<Post | null> {
       content
     }
   } catch (error) {
-    return null
+    throw Error(`Failed to retrieve post at ${slug} endpoint`)
   }
 }
