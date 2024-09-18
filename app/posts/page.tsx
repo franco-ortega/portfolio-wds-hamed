@@ -44,6 +44,22 @@ export default async function PostsPage() {
               explicabo, dolor iste cumque cum tempora debitis.
             </p>
           </li>
+          <li>
+            <h2>Post 6</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
+              excepturi earum impedit recusandae labore tenetur vero enim alias
+              explicabo, dolor iste cumque cum tempora debitis.
+            </p>
+          </li>
+          <li>
+            <h2>Post 7</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
+              excepturi earum impedit recusandae labore tenetur vero enim alias
+              explicabo, dolor iste cumque cum tempora debitis.
+            </p>
+          </li>
         </ul>
       </div>
     </section>
